@@ -1,0 +1,21 @@
+<form ngNativeValidate #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+    <div class="form-group">
+      <label>Area:</label>
+      <input type="text" class="form-control" name="Area" [(ngModel)]="Area" required>
+    </div>
+
+    <div class="form-group">
+      <label>Bedrooms:</label>
+      <input type="text" class="form-control" name="Bedrooms" [(ngModel)]="Bedrooms" required>
+    </div>
+
+    <div class="form-group">
+      <label>Bathrooms</label>
+      <input type="text" class="form-control" name="Bathrooms" [(ngModel)]="Bathrooms" required>
+    </div>
+
+    <div class="form-group mt-2">
+      <button class="btn btn-sm btn-danger">Submit</button>
+    </div>
+
+</form>
